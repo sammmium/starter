@@ -1,0 +1,86 @@
+class Database {
+    database = {
+        "users": {
+            "user1": {
+                "name": "John",
+                "sex": "m"
+            },
+            "user2": {
+                "name": "Jane",
+                "sex": "w"
+            },
+            "project1": {
+                "name": "SpaceY",
+                "sex": null
+            },
+            "other": {
+                "name": "Other",
+                "sex": null
+            }
+        },
+        "accounts": [
+
+            /*
+
+            here is an example how each item of accounts could be filled
+
+            */
+
+            {
+                "IID": "user1",
+                "id": "XgAEJq3nqGKKHlWQ",
+                "tags": "fontawesome;icons",
+                "target": {
+                    "name": "Fontawesome",
+                    "url": "https://fontawesome.com/"
+                },
+                "description": "Beautiful icons",
+                "login": "user1@example.com",
+                "password": {
+                    "value": {
+                        "last": "examplePassword123",
+                        "prev": null
+                    },
+                    "change": {
+                        "last": "2022-05-22",
+                        "next": null
+                    }
+                }
+            }
+
+            /*
+
+            here is description of each item of accounts
+
+            {
+                "IID": "{ some understandable short name of your project like: user1/user2/project1/other }",
+                "id": "{ it may be filled by generated id like 2gDXzJ1h9mJWrEsk (can be empty) - it is not using yet }",
+                "tags": "{ it may be filled by some tags like: tag1;tag2;tag3 (can be empty) - it is not using yet }",
+                "target": {
+                    "name": "{ visible name of project/source/account }",
+                    "url": "{ url of project/source/account }"
+                },
+                "description": "{ typical description of project/source/account (can be empty or null) }",
+                "login": "{ login }",
+                "password": {
+                    "value": {
+                        "last": "{ current actual password }",
+                        "prev": "{ abandoned not actual password (can be empty or null) }"
+                    },
+                    "change": {
+                        "last": "{ date when current password was created }",
+                        "next": "{ optional and can be null it is needed for notice about changing password }"
+                    }
+                }
+            }
+
+            here you can write any your accounts so much how you have separated by comma
+
+            */
+        ]
+    }
+
+    init() {
+        return this.database;
+    }
+}

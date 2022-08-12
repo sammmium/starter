@@ -1,0 +1,52 @@
+/* Main */
+
+.container-item {
+    margin-top: 15px;
+    border: gray;
+    background-color: aliceblue;
+}
+.container-title {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: darkgreen;
+}
+.description-item {
+    font-size: 10px;
+    color: gray;
+}
+.name-item {
+    font-size: 16px;
+    color: black;
+}
+.red {
+    background-color: red;
+}
+li.nav-item {
+    cursor: pointer;
+}
+
+/* Modal */
+
+.hide {
+    display: none;
+}
+label {
+    margin-top: 10px;
+    color: gray;
+}
+#modalFormPasswordAbandoned {
+    color: gray;
+}
+
+/* Highlighter of expire date */
+
+.warning-period {
+    color: red;
+}
+.attention-period {
+    color: darkorange;
+}
+.notice-period {
+    color: gold;
+}

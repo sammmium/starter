@@ -1,0 +1,9 @@
+class Config {
+    config = {
+        salt: '{ any word with ot without figures - it used for generating passwords / logins / id }'
+    }
+
+    init() {
+        return this.config;
+    }
+}
